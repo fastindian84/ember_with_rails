@@ -1,0 +1,20 @@
+<h1>You have {{ pluralize cart.itemsCount 'item'}} in your cart</h1>
+
+<div class="row">
+  <div class="col-md-12">
+    {{#each cart.items  key="@index" as |item| }}
+      {{items-cart content=item}}
+    {{/each}}
+  </div>
+</div>
+
+{{#if cart.items.length }}
+  <div class="row" >
+    <div class="col-md-12">
+      <span class="btn btn-success with-margin" {{action 'saveOrder'}}>
+        Save order
+      </span>
+    </div>
+  </div>
+{{/if}}
+

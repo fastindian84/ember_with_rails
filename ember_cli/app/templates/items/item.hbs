@@ -1,0 +1,8 @@
+
+<img src="{{model.imageSrc}}" height="250"/>
+<h1>{{model.title}}</h1>
+<pre>{{model.description}}</pre>
+<pre>{{model.price}}</pre>
+
+<a class="btn btn-success" {{action "addItemToCart" }}>Add item to cart</a>
+<a class="btn btn-danger"  {{action "removeItem" }}>Delete item</a>

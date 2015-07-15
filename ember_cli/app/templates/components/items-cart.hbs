@@ -1,0 +1,14 @@
+
+<div class="row">
+  <div class="col-md-2">
+    <img src="{{content.imageSrc}}" width="100%" alt=""/>
+  </div>
+  <div class="col-md-8">
+    <h3>{{content.title}} x {{content.count}}</h3>
+    <p>{{content.description}}</p>
+  </div>
+  <div class="col-md-4">
+    <span class="btn btn-danger" {{action 'decrementItem' }}>Decrement item</span>
+    <span class="btn btn-danger" {{action 'removeItem' }}>Remove Item from cart</span>
+  </div>
+</div>

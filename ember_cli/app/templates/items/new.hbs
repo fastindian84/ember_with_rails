@@ -1,0 +1,15 @@
+<form>
+  <div class="form-group">
+    {{input value=model.title class="form-control" placeholder="Title" aria-describedby="basic-addon1"}}
+  </div>
+  <div class="form-group">
+    {{input value=model.description class="form-control" placeholder="Description" aria-describedby="basic-addon1"}}
+  </div>
+  <div class="form-group">
+    {{input value=model.imageSrc class="form-control" placeholder="Image" aria-describedby="basic-addon1"}}
+  </div>
+  <div class="form-group">
+    {{input value=model.price class="form-control" placeholder="Price" aria-describedby="basic-addon1"}}
+  </div>
+  <input type="submit" value="Save item" class="btn btn-danger" {{action 'saveItem'}}/>
+</form>

@@ -1,0 +1,21 @@
+<h1>Please select item: </h1>
+<div class="row">
+  <div class="col-md-3">
+
+    <div class="list-group">
+      {{#each model as |item|}}
+        {{#link-to 'items.item' item.id class="list-group-item" }}
+          <img  src="{{item.imageSrc}}" width="35px"/>
+          {{item.title}}
+        {{/link-to}}
+      {{/each}}
+    </div>
+  
+  {{#link-to 'items.new' class="btn btn-default"}}
+    Add new item
+  {{/link-to}}
+</div>
+<div class="col-md-9">
+  {{outlet}}
+</div>
+</div>
